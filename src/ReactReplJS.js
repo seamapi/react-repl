@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import ReactReplView from "./ReactReplView"
+import useReactReplJS from "./useReactReplJS"
 import prettyFormat from "pretty-format"
 
 const AsyncFunction = Object.getPrototypeOf(async function () {}).constructor
@@ -29,6 +30,7 @@ export const ReactReplJS = ({
   onChangeTab,
   initiallyExecute = [],
   height,
+  submitCodeRef = null,
 }) => {
   const [lines, setLines] = useState([])
 
@@ -38,6 +40,8 @@ export const ReactReplJS = ({
     if (!execLine.trim()) return
     setLines(newLines.concat([await execAndGetLine(execLine)]))
   }
+
+  if (submitCodeRef) submitCodeRef.current = onSubmit
 
   useEffect(() => {
     ;(async () => {
@@ -66,6 +70,6 @@ export const ReactReplJS = ({
   )
 }
 
-export { ReactReplView }
+export { ReactReplView, useReactReplJS }
 
 export default ReactReplJS
