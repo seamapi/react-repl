@@ -3,6 +3,8 @@
 Display or interact with a REPL (Read Eval Print Loop). Create a Python
 Javascript terminal in React.
 
+This was made by your pal [@seveibar](https://twitter.com/seveibar)
+
 
 ![promises](https://user-images.githubusercontent.com/1910070/107008052-50cc7f80-6761-11eb-8ccc-61f79167f24b.png)
 ![error](https://user-images.githubusercontent.com/1910070/107008157-7194d500-6761-11eb-8816-03111757ccf4.png)
