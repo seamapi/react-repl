@@ -39,15 +39,17 @@ export const ReactReplJS = ({
     setLines(newLines.concat([await execAndGetLine(execLine)]))
   }
 
-  useEffect(async () => {
-    if (initiallyExecute.length === 0) return
-    const lines = []
-    for (const execLine of initiallyExecute) {
-      lines.push({ type: "input", value: execLine })
-      if (!execLine.trim()) continue
-      lines.push(await execAndGetLine(execLine))
-    }
-    setLines(lines)
+  useEffect(() => {
+    ;(async () => {
+      if (initiallyExecute.length === 0) return
+      const lines = []
+      for (const execLine of initiallyExecute) {
+        lines.push({ type: "input", value: execLine })
+        if (!execLine.trim()) continue
+        lines.push(await execAndGetLine(execLine))
+      }
+      setLines(lines)
+    })()
   }, [])
 
   return (
