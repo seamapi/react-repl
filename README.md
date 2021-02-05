@@ -3,6 +3,8 @@
 Display or interact with a REPL (Read Eval Print Loop). Create an interactive terminal for Python,
 Javascript or whatever in React.
 
+[Try it out](https://www.seveibar.com/react-repl/?path=/story/reactrepljs--main)
+
 This was made by your pal [@seveibar](https://twitter.com/seveibar)
 
 
