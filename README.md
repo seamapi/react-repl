@@ -56,6 +56,26 @@ const GeneralPurposeReplUI = () => {
 }
 ```
 
+## Advanced Javascript REPL Usage
+
+```javascript
+import { useReactReplJS } from "awesome-react-repl"
+
+const JavascriptRepl = () => {
+  const { submitCode, ReactRepl } = useReactReplJS() 
+  return  (
+    <div>
+      <ReactRepl
+        title="My Javascript Repl!"
+        height={300}
+        initiallyExecute={["a = 3", "b = 4", "a * b"]}
+      />
+      <button onClick={() => submitCode('alert(`Button pressed! a=${a}! This will appear in the REPL!`)')}>Alert!</button>
+    </div>
+  )
+}
+```
+
 ## Development
 
 1. Run `yarn install`
