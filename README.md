@@ -1,7 +1,7 @@
 # (Awesome) React Repl
 
-Display or interact with a REPL (Read Eval Print Loop). Create a Python
-Javascript terminal in React.
+Display or interact with a REPL (Read Eval Print Loop). Create an interactive terminal for Python,
+Javascript or whatever in React.
 
 This was made by your pal [@seveibar](https://twitter.com/seveibar)
 
