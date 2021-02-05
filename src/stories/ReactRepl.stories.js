@@ -15,9 +15,10 @@ export const Main = () => (
     selectedTab="Javascript"
     onChangeTab={action("onChangeTab")}
     onSubmit={action("onSubmit")}
-    height={80}
+    onClear={action("onClear")}
+    height={200}
     lines={[
-      { type: "input", value: "device = { something: 2 }" },
+      { type: "input", value: "obj = { something: 2 }" },
       { type: "output", value: '{ "something": 2 }' },
       { type: "input", value: "b" },
       { type: "error", value: "TypeError: b is not defined" },
