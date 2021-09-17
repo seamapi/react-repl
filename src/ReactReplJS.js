@@ -17,9 +17,7 @@ async function execAndGetLine(execLine) {
   if (!execLine.trim()) return []
   try {
     const evalOutput = await scopeEval(window, execLine)
-    if (evalOutput) {
-      return { type: "output", value: prettyFormat(evalOutput) }
-    }
+    return { type: "output", value: prettyFormat(evalOutput) }
   } catch (e) {
     return { type: "error", value: e }
   }

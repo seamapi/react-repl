@@ -11,6 +11,6 @@ export const Main = () => (
   <ReactReplJS
     title="<ReactReplJS />"
     height={300}
-    initiallyExecute={["a = 3", "b = 4", "a * b"]}
+    initiallyExecute={["a = 3", "b = 4", "a * b", "1 - 1"]}
   />
 )
