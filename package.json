@@ -1,6 +1,6 @@
 {
   "name": "awesome-react-repl",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "dist/ReactReplJS.js",
   "dependencies": {
     "pretty-format": "^26.6.2",
@@ -32,6 +32,10 @@
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^9.0.1",
+    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.2",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
@@ -42,9 +46,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "gh-pages": "^3.1.0",
+    "prettier": "^2.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.0.1"
-  }
+  },
+  "repository": "https://github.com/seveibar/react-repl"
 }
