@@ -28,11 +28,12 @@ export const ReactReplJS = ({
   tabs,
   selectedTab,
   onChangeTab,
+  initialLines = [],
   initiallyExecute = [],
   height,
   submitCodeRef = null,
 }) => {
-  const [lines, setLines] = useState([])
+  const [lines, setLines] = useState(initialLines)
 
   const onSubmit = async (execLine) => {
     const newLines = lines.concat([{ type: "input", value: execLine }])
