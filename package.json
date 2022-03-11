@@ -1,6 +1,6 @@
 {
   "name": "awesome-react-repl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/ReactReplJS.js",
   "dependencies": {
     "pretty-format": "^26.6.2",

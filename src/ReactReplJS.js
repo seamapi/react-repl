@@ -25,6 +25,8 @@ async function execAndGetLine(execLine) {
 
 export const ReactReplJS = ({
   title,
+  tabs,
+  selectedTab,
   onChangeTab,
   initiallyExecute = [],
   height,
@@ -57,8 +59,8 @@ export const ReactReplJS = ({
   return (
     <ReactReplView
       title={title}
-      tabs={["Javascript"]}
-      selectedTab="Javascript"
+      tabs={tabs || ["Javascript"]}
+      selectedTab={selectedTab || "Javascript"}
       onChangeTab={onChangeTab}
       onSubmit={onSubmit}
       height={height}
