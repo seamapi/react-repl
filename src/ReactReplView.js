@@ -73,7 +73,7 @@ const Tab = styled.div`
 const TerminalContent = styled.div`
   padding: 16px;
   padding-top: 2px;
-  height: ${(props) => props.height}px;
+  height: ${(props) => props.height};
   overflow-y: auto;
 `
 
